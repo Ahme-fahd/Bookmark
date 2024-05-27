@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 3</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./images/bookmark.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+<h1 class="text-center mt-4">Bookmarker</h1>
+<!-- <span class="mt-5 text-info">--------------------------------------------------------------------------------------------------------------------------------------</span> -->
+
+<h2 class="text-success mt-5 bg-">   <i class="fa-solid fa-bookmark me-2"></i>Bookmark your favorite sites   <i class="fa-solid fa-bookmark ms-2"></i></h2>
+
+
+<div class="site-name w-100 d-flex flex-column justify-content-center">
+
+<label for="first-input" class="text-white pb-2"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+    <input  type="text" id="first-input" class="form-control"   placeholder="Website Name">
+</div>
+
+
+<div class="site-url w-100 d-flex flex-column justify-content-center py-4">
+    <label for="second-input" class="text-white me-auto"> <i class="fa-solid fa-link pe-2"></i>  Site URL</label>
+
+    <input type="text" id="second-input" class="form-control mt-2" placeholder="Website URL">
+
+    <input type="search" placeholder="Search" class="form-control mt-4"  id="searchText" onkeyup="searchWebsite()">
+
+
+
+
+
+</div>
+<!-- <button id="AddWebsite" onclick="addWebsite();" class="btn btn-danger px-4 mt-2">Add</button> -->
+
+<div class="my-buttons d-flex gap-4">
+<button class="button" id="AddWebsite" onclick="addWebsite();">
+    <p>Add</p>
+  </button>
+<button class=" btn btn-light" onclick="editElement();">Edit</button>
+</div>
+
+<table class="text-white mt-5 text-center bg-info w-100">
+
+<thead>
+
+<tr >
+<th class="text-capitalize">index</th>
+<th class="text-capitalize">website name</th>
+<th class="text-capitalize">visit</th>
+<th class="text-capitalize">Update</th>
+<th class="text-capitalize">delete</th>
+
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+
+
+</tbody>
+
+</table>
+
+
+
+
+</div>
+
+
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<script src="./JS/main.js"></script>
+</body>
+</html>
